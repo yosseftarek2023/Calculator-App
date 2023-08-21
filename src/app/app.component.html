@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="calculator">
+  <div class="table">
+    <section class="output"><span>{{output}}</span></section>
+
+  <table>
+    <tr>
+      <td (click)="getAction(item)" *ngFor="let item of ['+','-','*','/']">{{item}}</td>
+    </tr>
+    <tr>
+      <td (click)="getAction(item)" *ngFor="let item of ['7','8','9']">{{item}}</td>
+      <td rowspan="4" class="equal" (click)="equal()">=</td>
+    </tr>
+    <tr>
+      <td (click)="getAction(item)" *ngFor="let item of ['4','5','6',]">{{item}}</td>
+    </tr>
+    <tr>
+      <td  (click)="getAction(item)"*ngFor="let item of ['1','2','3',]">{{item}}</td>
+    </tr>
+    <tr>
+      <td (click)="getAction(item)" *ngFor="let item of ['0','.']">{{item}}</td>
+      <td class="reset" (click)="clear()">AC</td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
